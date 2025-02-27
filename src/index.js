@@ -39,7 +39,7 @@ const reviewRouter = require("./routes/review.routes.js");
 app.use("/api/reviews", reviewRouter)
 
 const ratingRouter = require("./routes/rating.routes.js");
-app.use("api/ratings", ratingRouter);
+app.use("/api/ratings", ratingRouter);
 
 const paymentRouter = require("./routes/payment.routes.js");
 app.use("/api/payments", paymentRouter);

@@ -1,12 +1,12 @@
 const app = require(".");
 require("dotenv").config(); 
-const connectDb = require("./config/db"); // `connectDb` ko import karna sahi tarike se
+const connectDb = require("./config/db"); 
 
 const PORT = process.env.PORT || 6000;
 
 const startServer = async () => {
     try {
-        await connectDb(); // Pehle database se connect karna
+        await connectDb(); 
         console.log("MongoDB connected successfully!");
 
         app.listen(PORT, () => {
